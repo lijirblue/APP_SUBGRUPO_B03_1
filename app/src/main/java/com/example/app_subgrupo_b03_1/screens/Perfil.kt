@@ -31,13 +31,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.app_subgrupo_b03_1.R
 
-
 @Preview
 @Composable
 
 fun Perfil ()  {
     val scrollState = rememberScrollState()
-    Box(modifier = Modifierg
+    Box(modifier = Modifier
         .fillMaxSize()
         .padding(horizontal = 16.dp),
         contentAlignment = Alignment.TopCenter
