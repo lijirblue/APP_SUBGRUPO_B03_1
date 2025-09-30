@@ -4,34 +4,15 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.app_subgrupo_b03_1.screens.Galeria
-import com.example.app_subgrupo_b03_1.screens.Navegador
-import com.example.app_subgrupo_b03_1.screens.Opciones
-import com.example.app_subgrupo_b03_1.screens.Perfil
-import com.example.app_subgrupo_b03_1.screens.Video
+import com.example.app_subgrupo_b03_1.screens.*
 
 @Composable
-fun AppNavegation(
-    navController: NavHostController
-){
-    NavHost(
-        navController = navController,
-        startDestination = NavScreen.Perfil.name
-    ){
-     composable(route=NavScreen.Perfil.name){
-         Perfil()
-     }
-     composable(route=NavScreen.Galeria.name){
-         Galeria()
-     }
-    composable(route=NavScreen.Video.name){
-        Video()
-    }
-    composable(route=NavScreen.Navegador.name){
-        Navegador()
-        }
-    composable(route=NavScreen.Opciones.name){
-        Opciones()
-        }
+fun AppNavegation(navController: NavHostController) {   // ← recibe el controller
+    NavHost(navController = navController, startDestination = NavScreen.Perfil.route) {
+        composable(NavScreen.Perfil.route)    { Perfil() }
+        composable(NavScreen.Galeria.route)   { Galeria() }
+        composable(NavScreen.Video.route)     { Video() }
+        composable(NavScreen.Navegador.route) { Navegador() }
+        composable(NavScreen.Opciones.route)  { Opciones() }
     }
 }

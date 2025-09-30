@@ -56,6 +56,13 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.media3:media3-ui:1.4.1")
+    implementation("androidx.compose.ui:ui:1.7.2")
+    implementation("androidx.compose.material3:material3:1.3.0")
+    implementation("androidx.activity:activity-compose:1.9.2")
+    implementation("androidx.webkit:webkit:1.8.0")
+
 
     //Iconos extendidos
     implementation("androidx.compose.material:material-icons-extended:1.7.8")

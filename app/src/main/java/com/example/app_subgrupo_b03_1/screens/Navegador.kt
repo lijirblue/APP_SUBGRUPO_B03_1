@@ -1,31 +1,22 @@
 package com.example.app_subgrupo_b03_1.screens
 
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
-import com.example.app_subgrupo_b03_1.R
+import androidx.compose.ui.viewinterop.AndroidView
 
 @Composable
-fun Navegador () {
-    Column (
-        modifier = Modifier
-            .fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Image(
-            painter = painterResource(
-                id = R.drawable.imagenweb),
-            contentDescription = null)
-        Text(text = "Navegador")
-
-    }
-
-
+fun Navegador() {
+    AndroidView(
+        factory = { context ->
+            WebView(context).apply {
+                webViewClient = WebViewClient()
+                settings.javaScriptEnabled = true
+                loadUrl("https://www.canva.com/")
+            }
+        },
+        modifier = Modifier.fillMaxSize()
+    )
 }
