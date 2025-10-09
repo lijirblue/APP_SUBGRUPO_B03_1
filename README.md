@@ -67,3 +67,12 @@ El proyecto fue desarrollado utilizando las siguientes tecnologías clave:
 
 ---
 
+### Pantallas
+![Captura de la pantalla de perfil del usuario ](images/perfil.png)
+![Captura de la pantalla de perfil del usuario galeria](images/perfil.png)
+![Captura de la pantalla de perfil del usuario galeria2](images/perfil.png)
+![Captura de la pantalla de perfil del usuario explorador](images/perfil.png)
+![Captura de la pantalla de perfil del usuario video](images/perfil.png)
+![Captura de la pantalla de perfil del usuario opciones](images/perfil.png)
+![Captura de la pantalla de perfil del usuario opciones2](images/perfil.png)
+
